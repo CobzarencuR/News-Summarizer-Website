@@ -9,7 +9,7 @@ Sadly my teammate has to do his magic when it comes to sending me the news with 
 # Steps to view the website:
  - Download the .zip file and extract it
  - Open the Command Prompt, type the path to the python file that has 0 bytes (it should be something like this   
-   "cd C:\Users\Robert\Desktop\News-Summarizer-Website-main>python")
+   "cd C:\Users\Robert\Desktop\News-Summarizer-Website-main")
  - After that run the app.py program by typing "python app.py"
  - It will display the web adress (it should be something like this "http://127.0.0.1:5000")
  - Copy & paste it in your browser
