@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #13072E;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+header {
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+    top: 0;
+    height: 10.31vh;
+    /*height: 72.5px;*/
+    width: 100%;
+    background-color: #13072E;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+}
+
+label.logo {
+    color: white;
+    font-size: 5vh;
+    margin-left: 100px;
+    font-weight: bold;
+    margin-right: 20vw;
+}
+
+label:hover {
+    color: rgb(111, 79, 226);
+    transition: .5s;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav ul li {
+    justify-content: space-between;
+    margin: 0 12.5px;
+}
+
+nav ul li a {
+    justify-content: space-between;
+    color: white;
+    font-size: 2.6vh;
+    padding: 0px 5px;
+    border-radius: 3px;
+}
+
+a:hover {
+    color: rgb(111, 79, 226);
+    transition: .5s;
+}
+
+.search-icon {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    font-size: 2.5vh;
+}
+
+.search-bar {
+    display: none;
+    justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    width: 15vw;
+    margin-right: 2.5vw;
+    top: calc(80%);
+    right: 0;
+}
+
+.search-bar input {
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    color: black;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 4.3vh;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 5vw;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.title {
+    position: relative;
+    z-index: 2;
+    padding-top: 12vh;
+    margin-left: 100px;
+    color: white;
+}
+
+/*-----------------------------------*/
+
+
+/* News box container */
+#news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 59vh;
+    /*flex-grow: 1;*/
+}
+
+.news-box {
+    position: relative;
+    width: 45vw;
+    height: auto;
+    min-height: 41vh;
+    margin: 1em;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #13072E, #3f2182);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.news-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.news-box h2 {
+    font-size: 2.6vh;
+    margin-bottom: 7px;
+    color: white;
+}
+
+/* Summary */
+.news-box p {
+    font-size: 2.3vh;
+    height: auto;
+    min-height: 25vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    color: white;
+    overflow: hidden;
+}
+
+/* Read more link */
+.news-box a {
+    font-size: 2.3vh;
+    position: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(132, 106, 228);
+}
+
+footer {
+    height: 17vh;
+    margin-top: 7vh;
+    padding-top: 7vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    color: grey;
+}
+
+
+@media (min-width: 1600px) and (max-height: 900px) {
+    .news-box p {
+        min-height: 30vh;
+        height: auto;
+    }
+}
+
+@media (max-width: 1366px) {
+    .news-box {
+        width: 80vw;
+        min-height: 15vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    .news-box p {
+        height: auto;
+        min-height: 15vh;
+    }
+
+}
+
+@media (max-width: 1080px) {
+
+    .search-icon {
+        display: none;
+    }
+
+    .search-bar {
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        border-radius: 30px;
+        width: 50vw;
+        height: 3.5vh;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        z-index: 1;
+    }
+
+    .checkbtn {
+        display: block;
+        order: 1;
+    }
+
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        background: #13072E;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: flex;
+        transition: all .5s;
+        padding-top: 1vh;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    a:hover {
+        background: none;
+        color: rgb(111, 79, 226);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
