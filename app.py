@@ -38,8 +38,7 @@ def team():
 
 @app.route('/Image/RobertC.jpeg')
 def serve_image(filename):
-    return send_from_directory(os.path.join(app.root_path,'Image'), filename)
-
+    return send_from_directory(os.path.join(app.root_path,'static','Image'), filename)
 
 
 if __name__ == '__main__':
