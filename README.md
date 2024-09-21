@@ -7,15 +7,9 @@ You can view the website by checking the images in the "preview" folder.
 
 # Or follow these steps:
 Download the .zip file and extract it
-
 Open the Command Prompt and change the working directory to the downloaded file (for me it was: "cd C:\Users\Robert\Desktop\News-Summarizer-Website-main")
-
 After that run the app.py program by typing "python app.py"
-
 It will display the web adress (it should be something like this "http://127.0.0.1:5000")
-
 Copy & paste it in your browser
-
 Now uncomment the standard news data in the script.js file (line: 23-65)
-
 Refresh the web page
