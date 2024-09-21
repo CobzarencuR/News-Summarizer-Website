@@ -18,9 +18,9 @@ $(document).ready(function () {
 });
 
 //Standard news data
-//Uncomment the below code to display standard news data
+//Comment the code below to hide the standard news data
 
-/*
+
 newsData = [{
 
     "title": "Title 1",
@@ -62,7 +62,7 @@ newsData = [{
     "summary": "Summary 3",
     "url": "https://www.google.com"
 }]
-*/
+
 
 // Function to display news data
 function displayNews(newsData) {
