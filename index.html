@@ -6,9 +6,9 @@
     <title>News Summary</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -24,10 +24,10 @@
                 <label class="logo">News</label>
                 <div id="navbar">
                     <ul>
-                        <li><a href="index.html">Home</a>
+                        <li><a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="team.html" id="team-link">Team</a>
+                            <a href="/team" id="team-link">Team</a>
                         </li>
                         <li>
                             <div class="search-icon" id="searchIcon">
