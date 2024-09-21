@@ -18,7 +18,7 @@ $(document).ready(function () {
 });
 
 //Standard news data
-//Comment the code below to hide the standard news data
+//These are just some standard news data that can be used to display on the webpage
 
 
 newsData = [{
